@@ -2,44 +2,88 @@
 <html>
 <head>
 	<meta charset="utf-8">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>ZERADAM'S Module 2 Solution</title>
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<title>Module 3 Solution</title>
 </head>
 <body>
-	<h1>THE HOUSE MENU</h1>
-	<div class="row">
-	<div class="container col-lg-4 col-md-6 col-sm-12">
+    <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">Food, LLC</p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#chicken-div"><p class="item">Chicken</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center beef-item">
+              <a href="#beef-div"><p class="item">Beef</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center sushi-item">
+              <a href="#sushi-div"><p class="item">Sushi</p></a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  	</header>
+
+	<h1 class="text-center">THE HOUSE MENU</h1>
+
+	<div class="row container container-fluid">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="chicken-div">
 		<section>
 		<div id="chicken">
 			Chicken
 		</div>
 		<p>
-			The chicken in this recipe is absolutely fabulous and delicious. My biggest complaint is that the vegetables burnt to a crisp and were completely charred by the time the cooking was done. The lemons had practically disintegrated. If I make this again, I would probably add the vegetables about half way through. </p>
+			Our Roasted chicken is the best in town, its one of the best grilled food with a tomato sauce and
+			marinated cream dressing. Its also served with peper and gravys as an option.
+
+           </p>
 		</section>
 	</div>
-	<div class="container col-lg-4 col-md-6 col-sm-12">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="beef-div">
 		<section>
 		<div id="beef">
 			Beef
 		</div>
 		<p>
-			The Beef in this recipe is very nice and tasty. This is one of the specials here in this diner. It is served with grilled cheese and tomatos with some red wine. 
+			Our beaf is smocked and grilled for 2 hours and marinated for 2 days in the oven in 20 degree heat. Its the most softest beaf you will eat in Europe. Its served with deepfried potato and some smocked cheese.
 		</p>
 		</section>
 	</div>
-	<div class="container col-lg-4 col-md-12 col-sm-12">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="sushi-div">
 		<section>
 		<div id="sushi">
 			Sushi
 		</div>
 		<p>
-			The sushi chef is currently not available so we recommend you to choose either the beef or chicken menus.
+		 The sushi is fresh and new, served with latice and noodles as option. The sushi is served with some green peper putting and with a little bit of cream sauce over it.
 		</p>
 		</section>
 	</div>
 	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
 </body>
 </html>
